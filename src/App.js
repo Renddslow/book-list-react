@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import firebase from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
+import sortOn from 'sort-on';
 
 import Book from './components/Book';
 import Description from './components/Description';
@@ -46,7 +47,12 @@ class App extends Component {
       .on('value', (data) => {
         const books = data.val();
         this.setState({
-          data: Object.keys(books).map((key) => ({ ...books[key], id: key })),
+          data: sortOn(
+            Object.keys(books).map((key) => ({ ...books[key], id: key })),
+            (e) => e.title.slice(0, 3).toLowerCase() === 'the' ?
+              e.title.slice(3).trim() :
+              e.title
+            ),
         });
       });
 

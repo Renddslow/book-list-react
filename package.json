@@ -21,6 +21,7 @@
     "react-dom": "^16.6.1",
     "react-scripts": "2.1.1",
     "shortid": "^2.2.14",
+    "sort-on": "^3.0.0",
     "styled-components": "^4.0.3"
   },
   "scripts": {
