@@ -1,0 +1,64 @@
+.row {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 18px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.row-meta {
+    width: 50%;
+}
+
+.row h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0;
+}
+
+.row p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.row-meta > h2,
+.row-meta > p {
+    margin-bottom: 4px;
+}
+
+.row-details {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.row-details .avatar {
+    position: relative;
+}
+
+.row-details .avatar:not(:first-child):last-child {
+    left: -18px;
+}
+
+.row-footer {
+    display: flex;
+    align-items: center;
+}
+
+.more-button {
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.topics > * {
+    margin-right: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .row-meta {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}

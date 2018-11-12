@@ -1,0 +1,28 @@
+.form-sticky {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    box-sizing: border-box;
+    height: 100%;
+    align-items: center;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255, 0.95);
+}
+
+.form-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 24px 24px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:
+            rgba(0, 0, 0, 0.1) 0 0 0 1px,
+            0 0 48px 12px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    overflow: scroll;
+    position: relative;
+    max-height: 85%;
+    background: #fff;
+}

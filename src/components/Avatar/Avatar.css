@@ -1,0 +1,22 @@
+.avatar {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background: #5E6C84;
+    font-size: 12px;
+    color: #fff;
+    padding: 4px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.avatar--matt {
+    background: #6554C0;
+}
+
+.avatar--elijah {
+    background: #0052CC;
+}
